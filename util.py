@@ -9,20 +9,20 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
 # 基础设置 (Basic Settings)
-AGENTS_NUM = 50  # 交易员数量 (Number of traders)
-TOTAL_DATE = 264   # 模拟时长 (Simulation duration)
-TOTAL_SESSION = 3   # 每日交易次数 (Daily trading sessions)
+AGENTS_NUM = 2        # Down from 50
+TOTAL_DATE = 5        # Down from 264
+TOTAL_SESSION = 3   #  (Daily trading sessions)
 
-# 股票初始价格 (Initial stock prices)
+#(Initial stock prices)
 STOCK_A_INITIAL_PRICE = 30
 STOCK_B_INITIAL_PRICE = 40
-# STOCK_B_PUBLISH = 100   # 股票B发行数量
+# STOCK_B_PUBLISH = 100  
 
-# agent初始财产 (Agent initial property)
+# agent (Agent initial property)
 MAX_INITIAL_PROPERTY = 5000000.0
 MIN_INITIAL_PROPERTY = 100000.0
 
-# 贷款 (Loans)
+# (Loans)
 LOAN_TYPE = ["one-month", "two-month", "three-month"]
 LOAN_TYPE_DATE = [22, 44, 66]  # 贷款时长
 LOAN_RATE = [0.027, 0.03, 0.033] # 贷款利率
